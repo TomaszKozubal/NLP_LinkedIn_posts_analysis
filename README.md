@@ -1,8 +1,6 @@
-# NLP_LinkedIn_posts_analysis
+# Predicting LinkedIn Post Reach Using Regression Neural Network
 
-Predicting LinkedIn Post Reach Using Regression Neural Network
-
-Project Overview
+## Project Overview
 This project uses data from a SaaS platform for Employer Branding on LinkedIn. The dataset consists of CSV files, each representing all posts made by a single client (i.e., an instance of the platform). The goal is to predict the potential reach of a LinkedIn post based on variables that are under user control.
 
 A regression neural network model was trained to estimate post reach using the following features:
@@ -15,7 +13,7 @@ A regression neural network model was trained to estimate post reach using the f
 
 📄 Post type: ['LINK', 'NATIVE_GALLERY', 'VIDEO', 'NATIVE_FILE', 'TEXT', 'DOCUMENT']
 
-🛠️ Methodology
+## Methodology
 Data Preprocessing
 
 Posts with reach >3,000 were considered outliers and excluded to improve general accuracy.
@@ -24,7 +22,7 @@ Text was vectorized (you can mention the method if you used TF-IDF, embeddings, 
 
 Categorical variables (post type, time) were encoded appropriately.
 
-Model
+## Model
 
 A regression neural network (Keras/PyTorch/etc.).
 
