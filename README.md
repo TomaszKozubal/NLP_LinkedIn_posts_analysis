@@ -14,17 +14,17 @@ A regression neural network model was trained to estimate post reach using the f
 📄 Post type: ['LINK', 'NATIVE_GALLERY', 'VIDEO', 'NATIVE_FILE', 'TEXT', 'DOCUMENT']
 
 ## Methodology
-Data Preprocessing
+1. Data Preprocessing
 
-Posts with reach >3,000 were considered outliers and excluded to improve general accuracy.
+2. Posts with reach >3,000 were considered outliers and excluded to improve general accuracy.
 
-Text was vectorized (you can mention the method if you used TF-IDF, embeddings, etc.).
+3. Text was tokenized and then embedded
 
-Categorical variables (post type, time) were encoded appropriately.
+4. Categorical variables were hot-encoded 
 
 ## Model
 
-A regression neural network (Keras/PyTorch/etc.).
+A regression neural network was made using PyTorch.
 
 Optimized to minimize RMSE (root mean square error).
 
