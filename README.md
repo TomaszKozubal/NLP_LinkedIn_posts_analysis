@@ -41,25 +41,25 @@ Feature Engineering: Incorporates one-hot encoding for post times and formats
 
 Data Constraints:
 
-Model trained on posts with reach ≤ 3,000
+1. Model trained on posts with reach ≤ 3,000
 
-May underestimate potential for viral content
+2. May underestimate potential for viral content
 
-Primarily trained on English-language content
+3. Primarily trained on English-language content
 
-Performance Notes:
+### Performance Notes:
 
-Better at predicting reach for mid-range posts than extremes
+1. Better at predicting reach for mid-range posts than extremes
 
-Accuracy improves with more representative training data
+2. Accuracy improves with more representative training data
 
-Deployment Considerations:
+### Deployment Considerations:
 
-Requires significant memory for BERT processing
+1. Requires significant memory for BERT processing
 
-Inference time depends on GPU availability
+2. Inference time depends on GPU availability
 
-Model doesn't account for post engagement metrics (likes, comments)
+3. Model doesn't account for post engagement metrics (likes, comments)
 
 ## How to Use
 
@@ -71,4 +71,4 @@ Place data files in /kaggle/input/data-sets-for-this-project/
 
 Run the Jupyter notebook
 
-## Note: The actual data files are not included in this repository as they appear to be proprietary client data from a SaaS platform. The notebook demonstrates the methodology that could be applied to similar LinkedIn post data.
+### Note: The actual data files are not included in this repository as they appear to be proprietary client data from a SaaS platform. The notebook demonstrates the methodology that could be applied to similar LinkedIn post data.
