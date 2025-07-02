@@ -5,13 +5,13 @@ This project analyzes LinkedIn posts from a SaaS platform used for Employer Bran
 
 A regression neural network model was trained to estimate post reach using the following features:
 
-✍️ Post copy (text)
+1. Post copy (text)
 
-👥 Current network size
+2. Current network size
 
-⏰ Post time
+3. Post time
 
-📄 Post type: ['LINK', 'NATIVE_GALLERY', 'VIDEO', 'NATIVE_FILE', 'TEXT', 'DOCUMENT']
+4. Post type: ['LINK', 'NATIVE_GALLERY', 'VIDEO', 'NATIVE_FILE', 'TEXT', 'DOCUMENT']
 
 ## Key Features
 
@@ -70,5 +70,21 @@ Install required libraries (see Dependencies section)
 Place data files in /kaggle/input/data-sets-for-this-project/
 
 Run the Jupyter notebook
+
+## Dependencies
+
+Python 3.11.11
+
+PyTorch
+
+Transformers (for BERT)
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
 
 ### Note: The actual data files are not included in this repository as they appear to be proprietary client data from a SaaS platform. The notebook demonstrates the methodology that could be applied to similar LinkedIn post data.
