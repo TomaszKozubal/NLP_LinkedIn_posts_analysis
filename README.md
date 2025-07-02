@@ -1,7 +1,7 @@
 # Predicting LinkedIn Post Reach Using Regression Neural Network
 
 ## Project Overview
-This project uses data from a SaaS platform for Employer Branding on LinkedIn. The dataset consists of CSV files, each representing all posts made by a single client (i.e., an instance of the platform). The goal is to predict the potential reach of a LinkedIn post based on variables that are under user control.
+This project analyzes LinkedIn posts from a SaaS platform used for Employer Branding activities to predict post reach based on various features. The model uses a regression neural network that takes into account post content, network size, posting time, and post type to estimate potential reach.
 
 A regression neural network model was trained to estimate post reach using the following features:
 
@@ -13,33 +13,62 @@ A regression neural network model was trained to estimate post reach using the f
 
 📄 Post type: ['LINK', 'NATIVE_GALLERY', 'VIDEO', 'NATIVE_FILE', 'TEXT', 'DOCUMENT']
 
+## Key Features
+
+Data Processing: Cleans and prepares LinkedIn post data from multiple clients
+
+Natural Language Processing: Uses BERT tokenization and embeddings for post content analysis
+
+Neural Network Model: Implements a regression neural network to predict post reach
+
+Data Visualization: Includes visualizations of network size and reach distributions
+
+Feature Engineering: Incorporates one-hot encoding for post times and formats
+
 ## Methodology
+
 1. Data Preprocessing
 
 2. Posts with reach >3,000 were considered outliers and excluded to improve general accuracy.
 
 3. Text was tokenized and then embedded
 
-4. Categorical variables were hot-encoded 
+4. Categorical variables were hot-encoded
 
-## Model
+5. NN model using Pytorch
 
-A regression neural network was made using PyTorch.
+## Limitations and Considerations
 
-Optimized to minimize RMSE (root mean square error).
+Data Constraints:
 
-Training Results
+Model trained on posts with reach ≤ 3,000
 
-Full Dataset:
+May underestimate potential for viral content
 
-Mean Reach: ~1,100
+Primarily trained on English-language content
 
-RMSE: ~350
+Performance Notes:
 
-Filtered Dataset (Reach ≤ 3,000):
+Better at predicting reach for mid-range posts than extremes
 
-Mean Reach: ~610
+Accuracy improves with more representative training data
 
-RMSE: ~220
+Deployment Considerations:
 
-This filtering significantly improved proportional accuracy and reduced the influence of rare viral outliers.
+Requires significant memory for BERT processing
+
+Inference time depends on GPU availability
+
+Model doesn't account for post engagement metrics (likes, comments)
+
+## How to Use
+
+Clone the repository
+
+Install required libraries (see Dependencies section)
+
+Place data files in /kaggle/input/data-sets-for-this-project/
+
+Run the Jupyter notebook
+
+## Note: The actual data files are not included in this repository as they appear to be proprietary client data from a SaaS platform. The notebook demonstrates the methodology that could be applied to similar LinkedIn post data.
