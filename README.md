@@ -87,4 +87,4 @@ Scikit-learn
 
 Matplotlib
 
-### Note: The actual data files are not included in this repository as they appear to be proprietary client data from a SaaS platform. The notebook demonstrates the methodology that could be applied to similar LinkedIn post data.
+### Note: The actual data files are not included in this repository as they are proprietary client data from a SaaS platform.
